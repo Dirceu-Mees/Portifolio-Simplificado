@@ -11,6 +11,11 @@ body {
     background: linear-gradient(150deg, #000000, #9e00ff);
     background-size: 120% 120%;
 }
+hr{
+    border: 1px solid #ffff;
+    margin: 20px 0;
+
+}
 
 .cabecalho {
     display: flex;
@@ -103,11 +108,14 @@ body {
 .home .container-foto .foto {
     max-width: 450px;
     border-radius: 50%;
+    
 }
 
 .home .container-foto img {
     width: 100%;
     border-radius: 50%;
+    border: 8px solid orange;
+    
 }
 
 .home .foto.sombra-interna {
