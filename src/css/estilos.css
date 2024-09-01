@@ -123,7 +123,17 @@ hr{
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
 }
+.conhecimentos{
+    width: 100%;
+    display: flex;
+        
+}
 
+.conhecimentos img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
 
 .projetos .titulo {
     text-align: center;
