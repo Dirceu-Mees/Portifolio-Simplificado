@@ -1,3 +1,5 @@
+
+
 html {
     color: #fff;
     scroll-behavior: smooth;
@@ -106,15 +108,16 @@ hr{
 }
 
 .home .container-foto .foto {
-    max-width: 450px;
+    max-width: 350px;
     border-radius: 50%;
+    margin-top: 5%;
     
 }
 
 .home .container-foto img {
     width: 100%;
     border-radius: 50%;
-    border: 8px solid orange;
+    border: 8px solid rgb(155, 114, 39);
     
 }
 
@@ -127,18 +130,15 @@ hr{
     width: 100%;
     display: flex;
     padding: 20px;
-    justify-content: center;
+    justify-content: left;
         
 }
 
 .conhecimentos img{
     width: 45px;
     height: 45px;
-    border-radius: ;
+    border-radius: none;
     
-}
-.aprendendo {
-    justify-content: center;
 }
 
 .projetos .titulo {
