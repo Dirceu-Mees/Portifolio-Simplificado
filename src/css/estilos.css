@@ -126,13 +126,19 @@ hr{
 .conhecimentos{
     width: 100%;
     display: flex;
+    padding: 20px;
+    justify-content: center;
         
 }
 
 .conhecimentos img{
     width: 45px;
     height: 45px;
-    border-radius: 50%;
+    border-radius: ;
+    
+}
+.aprendendo {
+    justify-content: center;
 }
 
 .projetos .titulo {
