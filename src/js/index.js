@@ -1,6 +1,7 @@
 
 
 const btnMostrarProjetos = document.querySelector('.btn-mostrar-projetos');
+const btnEsconderProjetos = document.querySelector('.btn-esconder-projetos');
 const projetosInativos = document.querySelectorAll('.projeto:not(.ativo)');
 
 
@@ -11,9 +12,18 @@ btnMostrarProjetos.addEventListener('click', () => {
     
 
     btnMostrarProjetos.classList.add("remover");
+    btnEsconderProjetos.classList.add("adicionar");
 });
 
+btnEsconderProjetos.addEventListener('click', () => {
+    projetosInativos.forEach(projetoInativo => {
+        projetoInativo.classList.remove('ativo');
+    });
+    
 
+    btnMostrarProjetos.classList.remove("remover");
+    btnEsconderProjetos.classList.remove("adicionar");
+});
 
 
 // objetivo 1- quando o usuário clicar no botão de "mostrar mais", ele deve abrir os projetos escondidos no HTML
