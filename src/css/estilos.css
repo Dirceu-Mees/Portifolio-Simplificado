@@ -10,9 +10,11 @@ body {
     font-family: "poppins" sans-serif;
     margin: 0 auto;
     max-width: 1120px;
-    background: linear-gradient(150deg, #000000, #9e00ff);
+    background: linear-gradient(150deg, #52817e, #4f3261);
     background-size: 120% 120%;
 }
+
+
 hr{
     border: 1px solid #ffff;
     margin: 20px 0;
@@ -69,16 +71,17 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    letter-spacing: 2px;
-    padding: 0 15px;
+    letter-spacing: 1.7px;
+    padding: 0 ;
     max-width: 50%;
 }
 
 .home .informacoes h1 {
     font-family: "raleway", sans-serif;
-    font-size: 45px;
+    font-size: 30px;
     margin-bottom: 40px;
 }
+
 
 .home .informacoes p {
     font-family: "raleway", sans-serif;
@@ -122,23 +125,55 @@ hr{
 }
 
 .home .foto.sombra-interna {
-    background: linear-gradient(to right, #8a35c835, #18c063, #00eea2);
+    background: linear-gradient(to right, #a072c235, #5789e715, #364742);
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
 }
-.conhecimentos{
-    width: 100%;
+
+.home .informacoes .conhecimentos ul {
     display: flex;
-    padding: 20px;
-    justify-content: left;
-        
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.conhecimentos img{
-    width: 45px;
-    height: 45px;
-    border-radius: none;
-    
+.home .informacoes .conhecimentos .conhecimento-item {    
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+    text-align: center; 
+}
+
+.home .informacoes .conhecimentos li{
+    margin: 10px;
+}
+   
+.home .informacoes .conhecimentos .conhecimento-item i {    
+    font-size: 2em;    
+    transition: transform 0.5s ease-in-out;  
+}
+
+.home .informacoes .conhecimentos .conhecimento-item span {
+    font-size: 1.2em;
+    color: #f7f9fa;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.home .informacoes .conhecimentos .conhecimento-item:hover i {
+    transform: scale(1.4);
+}
+
+.home .informacoes .conhecimentos .conhecimento-item:hover span{
+    color: #13185e9c;
+    transform: scale(1.05);
+}
+
+.highlight-text {
+    color: yellowgreen;
+    text-shadow: 0 0 5px;
+    transform: scale(1.1);
 }
 
 .projetos .titulo {
